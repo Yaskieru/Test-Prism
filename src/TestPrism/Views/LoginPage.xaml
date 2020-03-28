@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"  
+             Title="{Binding Title}" 
+             x:Class="TestPrism.Views.LoginPage">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Hello World" />
+        <Button Text="Login with Facebook"
+                        Command="{Binding OnLoginWithFacebookCommand}"
+                        HeightRequest="45"
+                        TextColor="White"
+                        BackgroundColor="#4768AD"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+</ContentPage>
